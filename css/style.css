@@ -178,6 +178,7 @@ header{
 .sticky{
   background: var(--nav-background);
   box-shadow: var(--sticky-shadow);
+  -webkit-opacity: 0.1;
 } 
 .nav-bar{
   position: relative;
