@@ -1082,7 +1082,7 @@ footer{
   width: 100%;
   margin-top: 50px;
   padding: 2rem 2rem;
-  padding-bottom: 30px;
+  padding-bottom: 5px !important;
   color: #fff;
 }
 footer a{
