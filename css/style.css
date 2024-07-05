@@ -24,7 +24,7 @@
   --transparent-color-01 : rgba(0, 0, 0, 0.1);
   --transparent-color-02 : rgba(0, 64, 255, 0.2);
   --line-color : #d7d7d7;
-  --nav-background : rgba(255, 255, 255, 0.1);
+  --nav-background : rgba(255, 255, 255)!important;
 
   /*=======Color Filter=======*/
   --color-filter: invert(1);
@@ -61,7 +61,7 @@
   --transparent-color-01 : rgba(255, 255, 255, 0.1);
   --transparent-color-02 : rgba(250, 250, 252, 0.2);
   --line-color : #454f6b;
-  --nav-background : rgba(121, 121, 121, 0.1);
+  --nav-background : rgb(16, 25, 44);
 
   /*=======Color Filter=======*/
   --color-filter: invert(0);
@@ -177,6 +177,7 @@ header{
 }
 .sticky{
   background: var(--nav-background);
+  background-color: none;
   box-shadow: var(--sticky-shadow);
 } 
 .nav-bar{
@@ -193,6 +194,7 @@ header{
 }
 .sticky .nav-bar{
   height: calc(2.5rem + 1rem);
+  
 }
 .nav-bar .logo{
   color: var(--first-color);
@@ -431,7 +433,7 @@ header{
   max-width: 425px;
   min-width: 60%;
   border-radius: 50px;
-  box-shadow: var(--box-shadow);
+  box-shadow: 15px 15px 5px var(--hover-color);
 }
 .about-info .description{
   max-width: 100%;
@@ -1342,13 +1344,15 @@ footer a{
     width: 100%;
     /* transform: translate(60px, -180px); */
   }
-  .home .home-container .info{
-    font-size: 0.5rem;
-    width: 100%;
+  .home .home-container .btn{
+    font-size: 0.8rem;
     text-align: left;
   }
   .home-container .media-icons a{
     margin: 20px 0px;
+  }
+  .home-container .info{
+    align-self: start;
   }
 
   /*=======About section=======*/
